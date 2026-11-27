@@ -1,139 +1,29 @@
-# Neo-folio 🚀
+# Saurabh Zambare | Portfolio
 
-A modern, brutalist-style portfolio website built with React, TypeScript, and Vite. Features smooth animations, interactive components, and a bold design aesthetic.
+Personalised from [Neo-folio](https://github.com/Sridattasai18/Neo-folio) by Kaligotla Sri Datta Sai Vithal, under the MIT licence. Original licence retained in LICENSE.
 
-## 🌐 Live Demo
+React 18, TypeScript, Vite, Tailwind CSS and Motion.
 
-**[View Live Portfolio](https://sridattasai18.github.io/Neo-folio/)**
+## Local development
 
-## ✨ Features
+`npm ci` then `npm run dev`. Build with `npm run build`.
 
-- **Brutalist Design**: Bold typography, sharp borders, and high-contrast colors
-- **Smooth Animations**: Powered by Framer Motion for engaging user interactions
-- **Responsive Layout**: Fully responsive design that works on all devices
-- **GitHub Contributions**: Real-time GitHub contribution graph integration
-- **Interactive Components**: Custom cursor, animated tags, and hover effects
-- **Modern Tech Stack**: Built with React 18, TypeScript, and Vite
+## Deployment
 
-## 🛠️ Tech Stack
+Live site: https://saurabhzambare.github.io/saurabh-portfolio/
 
-- **Framework**: React 18.3.1
-- **Build Tool**: Vite 6.3.5
-- **Styling**: Tailwind CSS 4.1.12
-- **Animations**: Framer Motion (motion)
-- **UI Components**: Radix UI primitives
-- **Icons**: Lucide React, Material UI Icons
-- **Deployment**: GitHub Pages
+GitHub Actions builds and deploys every push to `main`. The repository uses GitHub Pages with the GitHub Actions publishing source. The Vite base path is `/saurabh-portfolio/`; update `vite.config.ts` if you rename the repository.
 
-## 📦 Installation
+## Content
 
-1. Clone the repository:
-```bash
-git clone https://github.com/Sridattasai18/Neo-folio.git
-cd Neo-folio
-```
+Edit `src/app/data/portfolio.ts` for projects, journey, training and skills. Layout and interactions are in `src/app/App.tsx`; styling is in `src/styles/portfolio.css`.
 
-2. Install dependencies:
-```bash
-npm install
-```
+## Evidence and dates
 
-3. Start the development server:
-```bash
-npm run dev
-```
+Project descriptions were checked against the linked project READMEs on 27 November 2026. Model evaluation, dataset findings and software test checkpoints are described separately from business outcomes. The GACL AI assistant is a developing extension. No unverified education or promotion dates, salary information, phone number, or resume download is published.
 
-4. Open your browser and visit `http://localhost:5173`
+Professional training is not presented as an academic master's degree. The profile image is the user's saved professional portrait. The screenshots are actual project figures from the user's GitHub repositories.
 
-## 🚀 Deployment
+## Content to complete
 
-### Manual Deployment
-Deploy to GitHub Pages with a single command:
-```bash
-npm run deploy
-```
-
-### Automatic Deployment
-The repository includes a GitHub Actions workflow that automatically deploys on every push to the `main` branch.
-
-For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
-
-## 📁 Project Structure
-
-```
-Neo-folio/
-├── src/
-│   ├── app/
-│   │   ├── components/     # React components
-│   │   │   ├── About.tsx
-│   │   │   ├── Hero.tsx
-│   │   │   ├── Projects.tsx
-│   │   │   ├── Skills.tsx
-│   │   │   ├── Experience.tsx
-│   │   │   ├── Education.tsx
-│   │   │   ├── Certifications.tsx
-│   │   │   ├── Contact.tsx
-│   │   │   └── ui/         # Reusable UI components
-│   │   └── App.tsx
-│   ├── styles/             # Global styles
-│   └── main.tsx
-├── public/                 # Static assets
-├── .github/workflows/      # GitHub Actions
-└── vite.config.ts         # Vite configuration
-```
-
-## 🎨 Customization
-
-### Update Personal Information
-Edit the component files in `src/app/components/` to update:
-- Profile picture and bio (About.tsx)
-- Projects and work experience (Projects.tsx, Experience.tsx)
-- Skills and certifications (Skills.tsx, Certifications.tsx)
-- Contact information (Contact.tsx)
-
-### Modify Styling
-- Global styles: `src/styles/`
-- Theme variables: `src/styles/theme.css`
-- Tailwind config: Uses Tailwind CSS 4 with Vite plugin
-
-### Change Base Path
-If deploying to a different repository, update the base path in `vite.config.ts`:
-```typescript
-export default defineConfig({
-  base: '/your-repo-name/',
-  // ...
-})
-```
-
-## 📝 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run deploy` - Deploy to GitHub Pages
-- `npm run preview` - Preview production build locally
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Sridattasai18/Neo-folio/issues).
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👤 Author
-
-**Kaligotla Sri Datta Sai Vithal**
-
-- GitHub: [@Sridattasai18](https://github.com/Sridattasai18)
-- Portfolio: [https://sridattasai18.github.io/Neo-folio/](https://sridattasai18.github.io/Neo-folio/)
-
-## 🙏 Acknowledgments
-
-- Original design inspiration from [Figma Neo-folio template](https://www.figma.com/design/VoZSEaTBZxhVgrT3O9FeTm/Neo-folio)
-- Built with [Vite](https://vitejs.dev/)
-- UI components from [Radix UI](https://www.radix-ui.com/)
-- Icons from [Lucide](https://lucide.dev/)
-
----
-
-⭐ Star this repo if you find it helpful!
+Add confirmed education and promotion dates and the final resume when available. The illustrated portrait can be replaced in `public/saurabh-profile.png`.

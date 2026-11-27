@@ -137,9 +137,7 @@
     @apply bg-background text-foreground;
   }
 
-  .project-card, button, a {
-    cursor: none;
-  }
+
 
   /**
   * Default typography styles for HTML elements (h1-h4, p, label, button, input).
