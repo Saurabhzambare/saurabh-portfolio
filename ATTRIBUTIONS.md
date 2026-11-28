@@ -6,7 +6,7 @@ The upstream project credits the [Figma Neo-folio design](https://www.figma.com/
 
 Icons: [Lucide](https://lucide.dev/), ISC licence. Fonts: Bricolage Grotesque and DM Mono, served by Google Fonts under their respective open font licences.
 
-The profile portrait was supplied from Saurabh Zambare's saved professional images. Project screenshots are from the linked project repositories.
+Project screenshots and the model-evaluation figure are from Saurabh Zambare's linked project repositories. The About section uses an intentional photo placeholder. The original portrait asset remains unused.
 
 Upstream attribution notice, retained for provenance:
 

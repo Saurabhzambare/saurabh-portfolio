@@ -1,15 +1,15 @@
 export const projects = [
   {
     id: "instacart",
-    title: "Instacart Retail Analytics",
+    title: "Instacart Analytics",
     label: "DATA, BI & MACHINE LEARNING",
     scope: "Portfolio project",
     featured: true,
-    categories: ["Data & BI", "Machine learning"],
-    tags: ["SQL Server", "Power BI", "Python", "BigQuery", "dbt"],
+    categories: ["Data & BI", "Machine Learning"],
+    tags: ["SQL", "Power BI", "Python", "Excel"],
     url: "https://github.com/Saurabhzambare/instacart-sql-powerbi-analysis",
     summary:
-      "Turning historical shopping behaviour into validated reporting and a repeat-purchase prediction experiment.",
+      "Exploring purchasing patterns and repeat orders through SQL analysis and Power BI reporting.",
     proof: "3.21 million prior orders analysed. Three Power BI report pages.",
     problem:
       "How do product popularity, repeat purchasing, basket sizes, and ordering times differ? The reporting needed consistent definitions before any comparison could be trusted.",
@@ -27,13 +27,13 @@ export const projects = [
     id: "gacl",
     title: "Public-Disclosure Pipeline",
     label: "DATA ENGINEERING",
-    scope: "Portfolio project",
-    featured: false,
-    categories: ["Data & BI"],
+    scope: "Independent project · AI extension in development",
+    featured: true,
+    categories: ["Data & BI", "Data Engineering"],
     tags: ["Python", "SQLite", "BigQuery", "dbt", "Power BI"],
     url: "https://github.com/Saurabhzambare/gacl-public-disclosure-pipeline",
     summary:
-      "Extracting public water and energy disclosures into traceable, validated reporting data.",
+      "Turning public disclosures into validated data and traceable reporting, with a Python pipeline and source-page references.",
     proof:
       "18 observations from two official reports, with source-page lineage.",
     problem:
@@ -43,6 +43,7 @@ export const projects = [
       "Preserved separate grains for 12 annual and six monthly observations.",
       "Recorded three dbt views, seven SQL tests, and eight reference checks.",
       "Built and refreshed a two-page Power BI report.",
+      "Extracted PDF-page evidence and split text into traceable chunks for the developing AI extension.",
     ],
     limitations:
       "Independent work using GACL public disclosures, not a commissioned company project. The AI research-assistant extension is being implemented; a completed RAG service is not claimed.",
@@ -76,7 +77,7 @@ export const projects = [
     label: "EXPLORATORY MACHINE LEARNING",
     scope: "Learning project",
     featured: false,
-    categories: ["Machine learning"],
+    categories: ["Machine Learning"],
     tags: ["Python", "pandas", "scikit-learn", "Regression"],
     url: "https://github.com/Saurabhzambare/Mercedes-Benz-Greener-Manufacturing",
     summary:
@@ -118,113 +119,290 @@ export const projects = [
 ];
 export const journey = [
   {
-    id: "india",
-    phase: "THE FOUNDATION / INDIA",
-    title: "Starting with computer science",
-    subtitle: "ITM Vocational University, Vadodara",
+    id: "itm",
+    date: "2017–2020",
+    title: "Building my foundation.",
+    subtitle: "Computer Science · ITM Vocational University",
+    place: "Vadodara, India",
     description:
-      "My education in computer science gave me an introduction to programming and the foundations I continue to build on through projects.",
-    tags: ["Computer science", "Programming"],
-    link: null,
+      "I began with computer science and programming, building the foundation I continue to develop through technical projects.",
+    tags: ["Computer Science", "Programming"],
   },
   {
     id: "ielts",
-    phase: "PREPARING FOR CANADA",
-    title: "IELTS and a new direction",
-    subtitle: "Preparing to study abroad",
+    date: "Final year at ITM",
+    title: "Preparing for Canada.",
+    subtitle: "IELTS preparation alongside college",
+    place: "India",
     description:
-      "Preparing for IELTS was part of taking the next step towards studying in Canada. Language preparation and adapting to a new environment became part of the learning journey.",
-    tags: ["IELTS preparation", "Adaptability"],
-    link: null,
+      "I started preparing for IELTS in my final year at ITM, while planning the next chapter of my education in Canada.",
+    tags: ["IELTS preparation", "A new direction"],
   },
   {
-    id: "college",
-    phase: "STUDYING IN CANADA",
-    title: "Sault College",
-    subtitle: "Computer Programming, Sault Ste. Marie",
+    id: "science",
+    date: "2020–2021",
+    title: "Learning during COVID.",
+    subtitle: "Data Scientist Program · Simplilearn",
+    place: "India · Professional training",
     description:
-      "I studied Computer Programming at Sault College and gained early workplace exposure through an IT Support Engineer internship at Innovation Centre SSM.",
-    tags: ["Computer Programming", "IT support"],
-    link: null,
+      "Before moving to Canada, I completed a Data Scientist program during the COVID period, developing my interest in working with data.",
+    tags: ["Data Science", "Professional training"],
+  },
+  {
+    id: "sault",
+    date: "2021–2023",
+    title: "A new chapter in Canada.",
+    subtitle: "Computer Programming · Sault College",
+    place: "Sault Ste. Marie, Canada",
+    description:
+      "Studying Computer Programming at Sault College meant continuing my technical education while adapting to life in a new country.",
+    tags: ["Computer Programming", "Canada"],
   },
   {
     id: "mcd",
-    phase: "WORKING IN CANADA / THROUGH MAY 2026",
-    title: "Learning to lead, on the floor",
-    subtitle: "McDonald’s Canada",
+    date: "2021–2026",
+    title: "Growing through responsibility.",
+    subtitle: "McDonald’s Canada · Crew Member to Department Manager",
+    place: "Sault Ste. Marie, Canada",
     description:
-      "Over nearly five years in customer service and restaurant operations, I progressed into department management. Coordinating people, reviewing inventory and waste, and responding to busy service taught me practical ownership.",
-    tags: ["Team coaching", "Operations", "Reporting"],
-    link: null,
-  },
-  {
-    id: "projects",
-    phase: "BUILDING ALONG THE WAY",
-    title: "Courses became projects",
-    subtitle: "Data science, reporting, and software",
-    description:
-      "I kept developing technical skills through professional training and hands-on projects. My work ranges from retail analytics and manufacturing data to a full-stack habit application.",
-    tags: ["Python", "Power BI", "Web development"],
-    link: "https://github.com/Saurabhzambare",
+      "I progressed through crew, training and management roles. Coaching people, coordinating service areas and taking ownership of kitchen operations shaped how I work with a team.",
+    tags: ["Team coaching", "Kitchen operations", "Reporting"],
   },
   {
     id: "french",
-    phase: "ANOTHER WAY TO LEARN",
-    title: "Taking on French",
-    subtitle: "French A2 and TEF/TCF preparation",
+    date: "January 2026 onward",
+    title: "Learning French.",
+    subtitle: "A different kind of daily practice",
+    place: "Language learning",
     description:
-      "Learning French introduced a different kind of practice: listening carefully, repeating the basics, and being comfortable making mistakes while improving.",
-    tags: ["French A2", "Consistent practice"],
-    link: null,
+      "I started learning French in January 2026. Listening, speaking and regular practice have become another part of my learning routine.",
+    tags: ["French", "Consistent practice"],
   },
   {
-    id: "return",
-    phase: "JUNE 2026 / INDIA",
-    title: "Back in Vadodara",
-    subtitle: "Closing the Canada chapter",
+    id: "india",
+    date: "June 2026",
+    title: "Returning to India.",
+    subtitle: "Back in Vadodara",
+    place: "India",
     description:
-      "After leaving my role in Canada, I returned to India in the first week of June 2026. I am now focused on building a long-term technical career here.",
-    tags: ["Career transition", "India"],
-    link: null,
+      "After closing my work chapter in Canada, I returned to India and turned my attention towards building a technical career here.",
+    tags: ["Vadodara", "A new chapter"],
   },
   {
-    id: "now",
-    phase: "TODAY / THE NEXT CHAPTER",
-    title: "Building towards data and AI",
-    subtitle: "Learning, creating, and looking for a team",
+    id: "today",
+    date: "Today",
+    title: "Building towards data and AI.",
+    subtitle: "Learning, creating and looking for a team",
+    place: "Vadodara, India",
     description:
-      "I am studying AI, developing my portfolio, and exploring junior data, AI, and software opportunities in India. Current work includes retail model evaluation and an evidence-grounded public-disclosure research assistant.",
-    tags: ["AI learning", "Projects", "Open to opportunities"],
+      "I am studying AI, developing data and software projects, and seeking opportunities in India. My current focus is clear reporting, reliable data and an evidence-grounded public-disclosure research assistant in development.",
+    tags: ["Data & reporting", "AI learning", "Open to opportunities"],
+  },
+];
+
+export const experience = [
+  {
+    title: "Crew Member",
+    summary: "Learning the operation from the floor.",
+    bullets: [
+      "Prepared products and supported service while following food-safety, quality and cleanliness procedures.",
+      "Worked with colleagues to keep assigned stations ready during changing service demand.",
+    ],
+  },
+  {
+    title: "Crew Trainer",
+    summary: "Helping new colleagues learn the work.",
+    bullets: [
+      "Demonstrated station procedures and coached crew members during hands-on practice.",
+      "Explained food-safety and quality requirements and gave feedback on day-to-day work.",
+    ],
+  },
+  {
+    title: "Team Leader",
+    summary: "Coordinating people and priorities.",
+    bullets: [
+      "Coordinated assigned team activities and communicated priorities during service.",
+      "Supported crew members with station tasks and escalated operational issues when needed.",
+    ],
+  },
+  {
+    title: "Swing Manager",
+    summary: "Supervising kitchen, drive-thru and front counter areas.",
+    bullets: [
+      "Oversaw assigned service areas, including the kitchen, drive-thru and front counter.",
+      "Adjusted station assignments and communicated priorities as service demand changed.",
+      "Monitored procedures, product quality and food safety within the assigned area.",
+    ],
+  },
+  {
+    title: "Support Manager",
+    summary: "Supporting the kitchen department manager.",
+    bullets: [
+      "Assisted the Kitchen Department Manager with kitchen operations and food-safety checks.",
+      "Completed waste counts and maintained waste records for department review.",
+      "Arranged stock transfers between stores and recorded incoming and outgoing stock.",
+    ],
+  },
+  {
+    title: "Department Manager",
+    summary: "Taking ownership of kitchen operations and reporting.",
+    bullets: [
+      "Reviewed inventory, waste and variance reports to investigate discrepancies and guide kitchen ordering decisions.",
+      "Placed kitchen stock orders and coordinated inventory requirements and transfers between stores.",
+      "Coached crew members on procedures, food safety and product quality, and delegated department priorities.",
+      "Collected crew feedback and presented department observations in management meetings.",
+    ],
+  },
+];
+
+export const education = [
+  {
+    date: "2017–2020",
+    title: "Computer Science",
+    institution: "ITM Vocational University",
+    place: "Vadodara, India",
+    kind: "Education",
+  },
+  {
+    date: "2020–2021",
+    title: "Data Scientist Master’s Program",
+    institution: "Simplilearn",
+    place: "Completed before moving to Canada",
+    kind: "Professional training",
+  },
+  {
+    date: "2021–2023",
+    title: "Computer Programming",
+    institution: "Sault College",
+    place: "Sault Ste. Marie, Canada",
+    kind: "Education",
+  },
+];
+
+// Credential URLs and completion dates are optional. Add only verified details.
+// This is a curated list, not an automatic sync with LinkedIn.
+export const courses = [
+  {
+    title: "Data Scientist Master’s Program",
+    issuer: "Simplilearn",
+    category: "Data Science & ML",
+    status: "Completed",
+    detail: "Professional training · 2020–2021",
+    url: null,
+  },
+  {
+    title: "AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents",
+    issuer: "",
+    category: "AI & LLMs",
+    status: "In progress",
+    detail: "LLM engineering, retrieval, fine-tuning and agents",
+    url: null,
+  },
+  {
+    title: "Power BI A-Z: Hands-On Power BI Training For Data Science!",
+    issuer: "Udemy",
+    category: "Data & BI",
+    status: "Coursework",
+    detail: "Data preparation, visualisation and reporting",
+    url: null,
+  },
+  {
+    title: "Tableau Desktop 10",
+    issuer: "",
+    category: "Data & BI",
+    status: "Coursework",
+    detail: "Data exploration and dashboard reporting",
+    url: null,
+  },
+  {
+    title: "Big Data Hadoop and Spark Developer",
+    issuer: "",
+    category: "Big Data",
+    status: "Completed",
+    detail: "Big data and distributed processing",
+    url: null,
+  },
+  {
+    title: "Machine Learning Advanced Certification Training",
+    issuer: "",
+    category: "Data Science & ML",
+    status: "Coursework",
+    detail: "Machine learning methods and evaluation",
+    url: null,
+  },
+];
+
+export const skills = [
+  {
+    title: "Data Analysis & Reporting",
+    tools: ["SQL", "Excel", "Power BI", "DAX", "Power Query", "Tableau"],
+    evidence:
+      "Reporting queries, metric definitions and checks between source data and dashboards.",
+    project: "Instacart Analytics",
+    link: projects[0].url,
+  },
+  {
+    title: "Python & Machine Learning",
+    tools: [
+      "Python",
+      "pandas",
+      "scikit-learn",
+      "Regression",
+      "Model Evaluation",
+    ],
+    evidence:
+      "Data preparation and documented comparisons with a baseline on the same evaluation folds.",
+    project: "Mercedes-Benz Greener Manufacturing",
+    link: projects[3].url,
+  },
+  {
+    title: "Data Engineering",
+    tools: ["BigQuery", "dbt", "SQLite", "ETL", "Data Validation"],
+    evidence:
+      "Traceable extraction, separate data grains, duplicate-safe loads and source-reference checks.",
+    project: "Public-Disclosure Pipeline",
+    link: projects[1].url,
+  },
+  {
+    title: "Software Development",
+    tools: [
+      "Django",
+      "DRF",
+      "React",
+      "PostgreSQL",
+      "ASP.NET Core MVC",
+      "EF Core",
+    ],
+    evidence:
+      "API-backed applications, authentication and consistent database changes.",
+    project: "Discipline System",
+    link: projects[2].url,
+  },
+  {
+    title: "Development Tools",
+    tools: ["Git", "GitHub", "Docker", "REST APIs"],
+    evidence:
+      "Versioned changes, documented setup and repeatable checks across independent projects.",
+    project: "Explore the repositories",
     link: "https://github.com/Saurabhzambare",
   },
 ];
-export const skills = [
+
+export const workSkills = [
   {
-    title: "Analytics & reporting",
-    tools: ["SQL", "Power BI", "DAX", "Power Query", "Excel", "Tableau"],
-    evidence:
-      "Building reporting views, reconciling totals, and keeping metric definitions clear in retail and disclosure analysis.",
-    link: "https://github.com/Saurabhzambare/instacart-sql-powerbi-analysis",
+    title: "Interpersonal & Collaboration",
+    text: "Working with colleagues from different backgrounds and coaching crew through hands-on practice.",
   },
   {
-    title: "Python, data & ML",
-    tools: ["Python", "pandas", "scikit-learn", "SQLite", "BigQuery", "dbt"],
-    evidence:
-      "Validating extracted records and comparing predictive models with baselines using documented evaluation splits.",
-    link: "https://github.com/Saurabhzambare/gacl-public-disclosure-pipeline",
+    title: "Communication",
+    text: "Explaining procedures, coordinating stock transfers and making changing priorities clear to the team.",
   },
   {
-    title: "Software development",
-    tools: ["Django", "DRF", "React", "PostgreSQL", ".NET", "Git", "Docker"],
-    evidence:
-      "Working on API-backed applications, authentication, consistent database changes, and software tests.",
-    link: "https://github.com/Saurabhzambare/discipline-system",
+    title: "Presentation",
+    text: "Organising crew feedback and presenting department observations in management meetings.",
   },
-];
-export const training = [
-  "Data Scientist Master’s Program (professional training)",
-  "Power BI A-Z: Hands-On Power BI Training For Data Science!",
-  "Big Data Hadoop and Spark Developer",
-  "Tableau Desktop 10",
-  "Machine Learning Advanced Certification Training",
+  {
+    title: "Reporting",
+    text: "Maintaining waste and transfer records, reviewing variances and explaining findings through project dashboards.",
+  },
 ];

@@ -1,29 +1,36 @@
-# Saurabh Zambare | Portfolio
+# Saurabh Zambare | Data Analysis & Reporting
 
-Personalised from [Neo-folio](https://github.com/Sridattasai18/Neo-folio) by Kaligotla Sri Datta Sai Vithal, under the MIT licence. Original licence retained in LICENSE.
+[Live portfolio](https://saurabhzambare.github.io/saurabh-portfolio/) · [Source](https://github.com/Saurabhzambare/saurabh-portfolio)
+
+Personalised from [Neo-folio](https://github.com/Sridattasai18/Neo-folio) by Kaligotla Sri Datta Sai Vithal, under the MIT licence. The original licence is retained in `LICENSE`.
 
 React 18, TypeScript, Vite, Tailwind CSS and Motion.
 
-## Local development
+## Development and deployment
 
-`npm ci` then `npm run dev`. Build with `npm run build`.
+Run `npm ci`, then `npm run dev`. Run `npm run build` for the production build.
 
-## Deployment
+GitHub Actions builds and deploys pushes to `main` using GitHub Pages. The Vite base path is `/saurabh-portfolio/`; update `vite.config.ts` if renaming the repository. Public assets use `import.meta.env.BASE_URL`.
 
-Live site: https://saurabhzambare.github.io/saurabh-portfolio/
+## Content and structure
 
-GitHub Actions builds and deploys every push to `main`. The repository uses GitHub Pages with the GitHub Actions publishing source. The Vite base path is `/saurabh-portfolio/`; update `vite.config.ts` if you rename the repository.
+The page follows this order: opening, About, projects, vertical journey, McDonald’s experience, education, certifications and courses, skills, contact.
 
-## Content
+- `src/app/data/portfolio.ts`: projects, journey, experience, education, courses, skills and interpersonal capabilities.
+- `src/app/App.tsx`: sections, navigation, case-study dialogs and filters.
+- `src/styles/portfolio.css`: responsive layout, floating hero labels and moving skill rows.
+- `public/`: actual project report screenshots and the model-evaluation figure.
 
-Edit `src/app/data/portfolio.ts` for projects, journey, training and skills. Layout and interactions are in `src/app/App.tsx`; styling is in `src/styles/portfolio.css`.
+The three skill rows loop in alternating directions, pause on hover or keyboard focus, and share a pause control. Reduced-motion preferences stop animated movement and leave the skills available as scrollable rows. Native disclosure controls expand journey chapters and experience roles. Case studies use a modal dialog with Escape, focus restoration and background scroll locking.
 
-## Evidence and dates
+## Evidence and publication boundaries
 
-Project descriptions were checked against the linked project READMEs on 27 November 2026. Model evaluation, dataset findings and software test checkpoints are described separately from business outcomes. The GACL AI assistant is a developing extension. No unverified education or promotion dates, salary information, phone number, or resume download is published.
+Content updated on 28 November 2026 using the agreed portfolio wording and existing project evidence. Company tenure is 2021–2026; individual promotion dates are intentionally omitted. The IT Support Engineer internship is excluded. Education does not display degree types, and the Data Scientist Master’s Program is clearly labelled professional training.
 
-Professional training is not presented as an academic master's degree. The profile image is the user's saved professional portrait. The screenshots are actual project figures from the user's GitHub repositories.
+Dataset findings, held-out model results and software checks are distinguished from business outcomes. GACL is independent work using public disclosures. The implemented extraction and text-chunking work is separated from the planned RAG, embeddings, generated answers and agent features. Course learning is not presented as completed professional AI experience.
 
-## Content to complete
+## Content still to complete
 
-Add confirmed education and promotion dates and the final resume when available. The illustrated portrait can be replaced in `public/saurabh-profile.png`.
+The About section intentionally uses a photo placeholder. Add a selected photograph when ready. Email and résumé download buttons are omitted until an address and final résumé are supplied.
+
+The courses list is curated from confirmed training, not an automatic LinkedIn sync or a claim that every LinkedIn credential has been reconciled. Ongoing learning is labelled. Add other LinkedIn courses, verified issuers, completion dates and credential URLs to the `courses` array. A credential button appears only when its `url` is provided.
